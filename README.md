@@ -9,7 +9,7 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of ericstrava is to … blah
+The goal of ericstrava is to develop a Shiny App, in a package structure, which allows for simple analysis of Eric's Strava data.
 
 ## Installation
 
