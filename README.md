@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ericstrava: Analysis of Eric’s Strava Data
+# ericstrava: Analysis of Eric’s Strava Data with a Shiny App
 
 <!-- badges: start -->
 
@@ -9,7 +9,8 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of ericstrava is to develop a Shiny App, in a package structure, which allows for simple analysis of Eric's Strava data.
+The goal of ericstrava is to develop a Shiny App, in a package
+structure, which allows for simple analysis of Eric’s Strava data.
 
 ## Installation
 
@@ -51,3 +52,5 @@ You can also embed plots, for example:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
+
+    #> Created:  2023-09-05 15:07:05.829332
