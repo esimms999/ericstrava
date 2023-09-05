@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ericstrava: Analysis of Eric's Strava Data
+# ericstrava: Analysis of Eric's Strava Data with a Shiny App
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
