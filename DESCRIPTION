@@ -2,7 +2,7 @@ Package: ericstrava
 Title: Strava Data Analysis
 Version: 0.0.0.9000
 Authors@R: 
-    person("Eric", "Simms", , "esimms@yahoo.com", role = c("cre", "aut"))
+    person("E.", "Simms", , "esimms@yahoo.com", role = c("cre", "aut"))
 Description: PKG_DESC.
 License: MIT + file LICENSE
 URL: https://github.com/esimms999/ericstrava

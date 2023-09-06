@@ -1,4 +1,13 @@
 url: ~
 template:
   bootstrap: 5
-
+  bslib:
+    bg: "#202123"
+    fg: "#B8BCC2"
+    primary: "#306cc9"
+footer:
+  structure:
+    left: developed_by
+    right: built_with
+  components:
+    legal: Site built 2023-09-05
