@@ -1,10 +1,8 @@
 url: ~
 template:
   bootstrap: 5
-  bslib:
-    bg: "#202123"
-    fg: "#B8BCC2"
-    primary: "#306cc9"
+  bootswatch: cyborg
+  theme: arrow-dark
 footer:
   structure:
     left: developed_by
