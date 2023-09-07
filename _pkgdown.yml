@@ -1,8 +1,7 @@
 url: ~
 template:
   bootstrap: 5
-  bootswatch: cyborg
-  theme: arrow-dark
+  bootswatch: materia
 footer:
   structure:
     left: developed_by
