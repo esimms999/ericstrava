@@ -14,10 +14,11 @@ structure, which allows for simple analysis of Eric’s Strava data.
 
 ## Installation
 
-You can install the development version of ericstrava like so:
+You can install ericstrava like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github(repo = "esimms999/ericstrava")
+library("ericstrava")
 ```
 
 ## Example
@@ -53,4 +54,4 @@ You can also embed plots, for example:
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
 
-    #> Created:  2023-09-05 15:07:05.829332
+    #> Created:  2023-09-07 20:01:54.925137
