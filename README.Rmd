@@ -23,10 +23,11 @@ The goal of ericstrava is to develop a Shiny App, in a package structure, which 
 
 ## Installation
 
-You can install the development version of ericstrava like so:
+You can install ericstrava like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+``` {r install, eval = FALSE}
+devtools::install_github(repo = "esimms999/ericstrava")
+library("ericstrava")
 ```
 
 ## Example
