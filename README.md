@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ericstrava: Analysis of Eric’s Strava Data with a Shiny App
+## Analysis of Strava Data with a Shiny App
 
 <!-- badges: start -->
 
@@ -54,4 +54,8 @@ You can also embed plots, for example:
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
 
-    #> Created:  2023-09-07 20:01:54.925137
+<div align="right">
+
+Created: 2023-09-08 07:01:41 PM UTC
+
+</div>
