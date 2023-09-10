@@ -55,6 +55,3 @@ plot(pressure)
 
 In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
 
-```{r creation_datetime, eval = TRUE, echo = FALSE, results='asis'}
-cat("<div align='right'>Created: ", format(Sys.time(), '%Y-%m-%d %X %Z'), "</div>")
-```

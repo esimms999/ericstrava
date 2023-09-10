@@ -2,7 +2,10 @@ url: ~
 template:
   bootstrap: 5
   theme: breeze-light
+  # path: "inst/pkgdown"
 footer:
   structure:
     left: developed_by
-    right: [built_with, date]
+    right: [built_with, built_date]
+  components:
+    built_date: "<br>Created: 2023-09-10 12:35 UTC"

@@ -53,9 +53,3 @@ You can also embed plots, for example:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
-
-<div align="right">
-
-Created: 2023-09-08 07:01:41 PM UTC
-
-</div>
