@@ -1,12 +1,12 @@
 url: ~
 template:
   bootstrap: 5
-  theme: breeze-light
+  bootswatch: materia
+  #theme: breeze-light
 footer:
   structure:
     left: developed_by
     right: [built_with, built_text, built_date]
   components:
-    #built_date: "<br>Created: 2023-09-10 12:35 UTC"
     built_date: !expr "format(Sys.time(), '%Y-%m-%d %H:%M %Z')"
     built_text: "<br>on "
