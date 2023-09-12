@@ -1,11 +1,7 @@
 url: ~
 template:
   bootstrap: 5
-  bootswatch: lux
-  bslib:
-    pkgdown-nav-height: 25px
-  #bootswatch: materia
-  #theme: breeze-light
+  theme: breeze-light
 footer:
   structure:
     left: developed_by
