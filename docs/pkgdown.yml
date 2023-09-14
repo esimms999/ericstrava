@@ -3,5 +3,8 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   ericstrava: ericstrava.html
-last_built: 2023-09-13T17:03Z
+last_built: 2023-09-14T16:52Z
+urls:
+  reference: https://esimms999.github.io/ericstrava/reference
+  article: https://esimms999.github.io/ericstrava/articles
 
