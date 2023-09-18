@@ -10,7 +10,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 <!-- badges: end -->
 
 The goal of ericstrava is to develop a Shiny App, in a package
-structure, which allows for simple analysis of Eric’s Strava data.
+structure, which allows for simple analysis of Strava data.
 
 ## Installation
 
