@@ -1,6 +1,9 @@
 ---
 title: "pkgdown: Adding a Date to the Footer"
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+    toc_depth: 4
 vignette: >
   %\VignetteIndexEntry{pkgdown: Adding a Date to the Footer}
   %\VignetteEngine{knitr::rmarkdown}
@@ -18,10 +21,11 @@ knitr::opts_chunk$set(
 library(ericstrava)
 ```
 
+#### Introduction
 
-#### Note: I am hoping there is a much easier way to do this! Please let me know!
+__Note: I am hoping there is a much easier way to do this! Please let me know!__
 
-#### Note: I am doing this on the public GitHub; I have not yet tried it on GHEC.
+__Note: I am doing this on the public GitHub; I have not yet tried it on GHEC.__
 
 <br>
 The default footer produced with `pkgdown::build_site()` looks like this:
@@ -50,11 +54,8 @@ The solution I have found involves the following:
   * setting the yaml.eval.expr option
   * modifying the github workflow
 
-<br>
+#### Modifying \_pkgdown.yml
 
-__Modifying \_pkgdown.yml__
-
-<br>
 According to the [pkgdown documentation](https://pkgdown.r-lib.org/reference/build_site.html#footer), there are three pre-defined components available for the `footer` block: 
 
   * `developed_by`, a sentence describing the main authors of the package
@@ -89,9 +90,7 @@ Running `pkgdown::build_site()` produces the following footer:
 <br>
 ![](images/footer_mod_date_fig03.png){width=100%}
 
-<br>
-__yaml.eval.expr__
-<br><br>
+#### Setting the yaml.eval.expr option
 
 By default, the ability to run R expressions in the _pkgdown.yml file is turned off. This is done for security reasons because an entire file of R statements could be pulled in and executed without the user being aware of it. 
 
@@ -119,15 +118,13 @@ We can automate the setting of this option by defining an `.onLoad` function, wh
 }
 ```
 
-#### Note: I have no idea what triggers .onUnload ... if someone can let me know, I would appreciate it.
+__Note: I have no idea what triggers .onUnload ... if someone can let me know, I would appreciate it.__
 
 
 <br>
 My understanding is it is considered "standard" to store such code in `R/zzz.R`. Those `zzz`'s are not a placeholder; this is what I have found in my research. I am hoping that I have been the victim of a prank or outdated documentation about this.
 
-<br>
-__Modifying the GitHub Workflow__
-<br><br>
+#### Modifying the GitHub Workflow
 
 I had been making use of a workflow to automatically create the pkgdown site when a PR is accepted into my main branch on GitHub. In order to have the date appear in the footnote, I needed to add a line to set the `yaml.eval.expr` option in the `.github/workflows/pkgdown.yaml` file:
 
@@ -138,8 +135,8 @@ I had been making use of a workflow to automatically create the pkgdown site whe
     pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
 ```
 
-<br>
-__Request for Feedback__
-<br><br>
+#### Request for Feedback
+
 I am interested in your comments on this!
+esimms@yahoo.com
 
