@@ -40,7 +40,7 @@ I would like to also display the date when the site was last modified:
 ![](images/footer_mod_date_fig02.png){width=100%}
 
 <br>
-I expected that pkgdown would have this available, but I have not been successful in finding anything on this. When it comes to having dates visible on package-related documentation, I did find this in [R Packages: Chapter 17.2](https://r-pkgs.org/vignettes.html#metadata) which mentions the yaml for a vignette:
+I expected that pkgdown would have this available, but I have not been successful in finding anything on this. When it comes to having dates visible on package-related documentation, I found the following in [R Packages: Chapter 17.2](https://r-pkgs.org/vignettes.html#metadata), which mentions the yaml for a vignette:
 
 > date: we think this usually does more harm than good, since it’s not clear what the date is meant to convey. Is it the last time the vignette source was updated? In that case you’ll have to manage it manually and it’s easy to forget to update it. If you manage date programmatically with Sys.date(), the date reflects when the vignette was built, i.e. when the package bundle was created, which has nothing to do with when the vignette or package was last modified. We’ve decided it’s best to omit the date.
 
@@ -122,7 +122,9 @@ __Note: I have no idea what triggers .onUnload ... if someone can let me know, I
 
 
 <br>
-My understanding is it is considered "standard" to store such code in `R/zzz.R`. Those `zzz`'s are not a placeholder; this is what I have found in my research. I am hoping that I have been the victim of a prank or outdated documentation about this.
+It is considered "standard" to store such code in `R/zzz.R`. Those `zzz`'s are not a placeholder; this is what I have found in my research. I was hoping that I have been the victim of a prank or outdated documentation about this, but it is mentioned in [R Packages: Chapter 6.5.4](https://r-pkgs.org/code.html?q=zzz#sec-code-onLoad-onAttach):
+
+>If you use .onLoad(), consider using .onUnload() to clean up any side effects. By convention, .onLoad() and friends are usually saved in a file called R/zzz.R.
 
 #### Modifying the GitHub Workflow
 
