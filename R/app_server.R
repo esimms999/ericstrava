@@ -5,5 +5,7 @@
 #' @import shiny
 #' @noRd
 app_server <- function(input, output, session) {
-  # Your application server logic
+  output$distPlot <- renderPlot({
+    hist(rnorm(input$obs))
+  })
 }
